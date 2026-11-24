@@ -14,3 +14,10 @@
 .modal-actions button{flex:1}
 @media(max-width:430px){.offer-modal{padding:24px 18px}}
 @media(prefers-reduced-motion:reduce){.card.gone{animation:none}}
+ul{
+    list-style: none;
+    background-color: white;
+    border:1px solid #ead8df;
+    border-radius: 20px;
+    padding: 1rem;
+}

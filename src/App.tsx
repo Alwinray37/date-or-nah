@@ -125,6 +125,11 @@ function App() {
       </div>
       <button className="primary start" onClick={start}>Start game</button>
       <p className="hint">16 cards on the board · 4 surprise offers · 1 date to do together</p>
+      <ul>
+        {ideas.map((el) => (
+          <li key={el.id} >{el.title}</li>
+        ))}
+      </ul>
     </section> : <section className="game">
       <div className="game-header">
         <div><p className="eyebrow">{game.phase === 'pick' ? 'Make your pick' : game.phase === 'finished' ? 'The reveal' : 'Round ' + game.round + ' of 4'}</p>
